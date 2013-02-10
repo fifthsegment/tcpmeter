@@ -19,9 +19,9 @@ func main() {
 	}
 	cmdline.BoolVar(&cf, "c", false, "client mode")
 	cmdline.BoolVar(&sf, "s", false, "server mode")
-	cmdline.StringVar(&raddr, "r", ":8008", "RPC address")
+	cmdline.StringVar(&raddr, "r", ":8001", "RPC address")
 	cmdline.StringVar(&haddr, "h", ":8080", "Admin WebUI")
-	cmdline.StringVar(&fname, "l", "logs/log.out", "Log file name")
+	cmdline.StringVar(&fname, "l", "/tmp/tcpmeter.log", "Log file name")
 	cmdline.StringVar(&pname, "p", "", "CPU profile file")
 
 	cmdline.Parse(os.Args[1:])
